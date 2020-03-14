@@ -7,15 +7,11 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  build-on-ubuntu-16-04:
 
     runs-on: ubuntu-16.04
     
     steps:
     - uses: actions/checkout@v2
-    - name: make directory build
-      run: mkdir build && cd build
-    - name: cmake
-      run: cmake ..
-    - name: make
-      run: make
+    - name: build
+      run: mkdir build && cd build && cmake .. && make
