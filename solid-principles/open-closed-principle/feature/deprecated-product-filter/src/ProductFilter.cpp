@@ -1,4 +1,4 @@
-#include "ProductFilter.h"
+#include "ProductFilter.hpp"
 
 ProductFilter::Products ProductFilter::by_color(ProductFilter::Products products, Color color)
 {
